@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 5vh 5vw;
+  font-family: sans-serif;
+  background-color: rgb(247, 240, 247);
+}
+
+header {
+  background-color: rgb(0, 132, 255);
+  padding: 6px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a, a:any-link {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+
+}
+
+form {
+  display: flex;
+}
+
+.home-img {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
+
+.home-page, 
+.student-page, 
+.student-not-found,
+.course {
+  margin-top: 100px;
+}
+
+.query-students {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+button {
+  background-color: rgb(0, 132, 255);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+input {
+  height: 100%;
+  margin-right: 6px;
+  padding: 6px;
+  font-size: 1rem;
+}
+
+.student-card-container,
+.course-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 12px;
+  text-align: center;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 3px 10px -3px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 1px 3px 10px -3px rgba(66, 68, 90, 1);
+  box-shadow: 1px 3px 10px -3px rgba(66, 68, 90, 1);
+}
+
+.card-text {
+  margin: 25px 0;
+}
+.card-span-text {
+  font-weight: 600;
+}
+
+.course {
+  text-align: center;
+}
+.course-detail-text {
+  margin: 32px 0;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding: 5vh 20vw;
+  }
+  .query-students {
+    flex-direction: row;
+  }
+}
