@@ -10,7 +10,7 @@ export default function SearchResults() {
     if (filter) {
         const filteredStudents = students.filter(
           (student) =>
-            student.grade == filter || student.name.startsWith(filter)
+            student.grade == filter || student.name.toLowerCase().startsWith(filter.toLowerCase())
         );
         return (
           <div className="student-page">
